@@ -22,7 +22,6 @@ export default function App() {
         <Links />
       </head>
       <body>
-        <a href="/">Etusivu</a> | <a href="/test">Test</a>
         <Outlet />
         <ScrollRestoration />
         <Scripts />

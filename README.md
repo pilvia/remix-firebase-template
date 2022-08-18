@@ -31,3 +31,7 @@ npm run deploy
 ## Firebase Functions
 
 You can add other Firebase Functions like Firebase triggers by adding code to functions/src and modifying functions/src/index.ts accordingly.
+
+## Firebase Auth
+
+If you are using Firebase authentication, you can uncomment Fetch Interceptor in app/entry.client.ts . This will allow you to authenticate user's requests on server side with Authentication header, instead of own cookie, which other instructions usually suggest.

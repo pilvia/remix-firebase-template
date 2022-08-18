@@ -1,6 +1,7 @@
 {
   "private": true,
   "sideEffects": false,
+  "packageManager": "yarn@3.2.2",
   "scripts": {
     "build": "run-p \"build:*\"",
     "dev": "remix build && run-p \"dev:*\"",

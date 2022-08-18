@@ -22,9 +22,12 @@ This starts your app in development mode, which will purge the server require ca
 
 ## Deployment
 
-First, build your app for production on Firebase:
+Deploy app for production on Firebase:
 
 ```sh
 npm run deploy
 ```
 
+## Firebase Functions
+
+You can add other Firebase Functions like Firebase triggers by adding code to functions/src and modifying functions/src/index.ts accordingly.

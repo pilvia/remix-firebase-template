@@ -1,7 +1,7 @@
-const path = require("path");
-const express = require("express");
-const { createRequestHandler } = require("@remix-run/express");
-const { onRequest } = require('firebase-functions/v2/https');
+import * as path  from "path";
+import express from 'express';
+import { createRequestHandler } from "@remix-run/express";
+import { onRequest } from 'firebase-functions/v2/https';
 const BUILD_DIR = path.join(process.cwd(), "build");
 const app = express();
 
@@ -21,7 +21,7 @@ app.all(
         mode: process.env.NODE_ENV,
       })
 );
-exports.remix = onRequest({ region: "europe-north1" },app)
+export const remixServer  = onRequest({ region: "europe-north1" },app)
 
 function purgeRequireCache() {
   // purge require cache on requests for "server side HMR" this won't let

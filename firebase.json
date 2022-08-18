@@ -17,7 +17,7 @@
     ],
     "rewrites": [ {
       "source": "**",
-      "function": "remix",
+      "function": "remixserver",
       "region": "europe-north1"  
     } ]
   }
